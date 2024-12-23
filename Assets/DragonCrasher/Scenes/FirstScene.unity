@@ -812,6 +812,79 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1810705478751493423, guid: 73ede0e39d05144b8b06451cf82a90f3, type: 3}
   m_PrefabInstance: {fileID: 3006057667514374771}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &661151105
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 902629388126114051, guid: 0bda7922fc2444e45af3e1c43a8a1d2f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -14.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 902629388126114051, guid: 0bda7922fc2444e45af3e1c43a8a1d2f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.7194078
+      objectReference: {fileID: 0}
+    - target: {fileID: 902629388126114051, guid: 0bda7922fc2444e45af3e1c43a8a1d2f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 902629388126114051, guid: 0bda7922fc2444e45af3e1c43a8a1d2f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 902629388126114051, guid: 0bda7922fc2444e45af3e1c43a8a1d2f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 902629388126114051, guid: 0bda7922fc2444e45af3e1c43a8a1d2f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 902629388126114051, guid: 0bda7922fc2444e45af3e1c43a8a1d2f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 902629388126114051, guid: 0bda7922fc2444e45af3e1c43a8a1d2f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 902629388126114051, guid: 0bda7922fc2444e45af3e1c43a8a1d2f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 902629388126114051, guid: 0bda7922fc2444e45af3e1c43a8a1d2f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2896207749881338416, guid: 0bda7922fc2444e45af3e1c43a8a1d2f, type: 3}
+      propertyPath: m_Name
+      value: Card
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083360587878206261, guid: 0bda7922fc2444e45af3e1c43a8a1d2f, type: 3}
+      propertyPath: template
+      value: 
+      objectReference: {fileID: 11400000, guid: f8b9f4fe83e3a9548afb7b3254d8be3d, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8282197807721548380, guid: 0bda7922fc2444e45af3e1c43a8a1d2f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 8447994371997111900, guid: 0bda7922fc2444e45af3e1c43a8a1d2f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 3633192542300595937, guid: 0bda7922fc2444e45af3e1c43a8a1d2f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 5867745591666942770, guid: 0bda7922fc2444e45af3e1c43a8a1d2f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+  m_SourcePrefab: {fileID: 100100000, guid: 0bda7922fc2444e45af3e1c43a8a1d2f, type: 3}
 --- !u!1 &692114123
 GameObject:
   m_ObjectHideFlags: 0
@@ -878,8 +951,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0
   m_LocalBounds:
-    m_Center: {x: 0.061950088, y: -0.060799956, z: 0}
-    m_Extent: {x: 2.6061502, y: 3.7848, z: 0}
+    m_Center: {x: 0.06095004, y: -0.055149913, z: 0}
+    m_Extent: {x: 2.61095, y: 3.78695, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1317,8 +1390,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0
   m_LocalBounds:
-    m_Center: {x: -0.91865015, y: 2.0844, z: 0}
-    m_Extent: {x: 10.41655, y: 5.1184998, z: 0}
+    m_Center: {x: -0.92564964, y: 2.0858998, z: 0}
+    m_Extent: {x: 10.41605, y: 5.1135, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1897,8 +1970,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0
   m_LocalBounds:
-    m_Center: {x: 0.05850005, y: -0.054450035, z: 0}
-    m_Extent: {x: 2.6046, y: 3.78215, z: 0}
+    m_Center: {x: 0.05339992, y: -0.06190002, z: 0}
+    m_Extent: {x: 2.6047, y: 3.782, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -3439,8 +3512,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 1
   m_ShadowVolumeIntensity: 0.119
   m_LocalBounds:
-    m_Center: {x: 0.28254986, y: 0.063549995, z: 0}
-    m_Extent: {x: 9.61355, y: 4.29495, z: 0}
+    m_Center: {x: 0.28424978, y: 0.054450035, z: 0}
+    m_Extent: {x: 9.60615, y: 4.29745, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -5493,8 +5566,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 1
   m_ShadowVolumeIntensity: 0.119
   m_LocalBounds:
-    m_Center: {x: -0.038300037, y: 0.3972001, z: 0}
-    m_Extent: {x: 9.434999, y: 4.6365, z: 0}
+    m_Center: {x: -0.033899784, y: 0.3967998, z: 0}
+    m_Extent: {x: 9.4359, y: 4.6406, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -5857,8 +5930,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0
   m_LocalBounds:
-    m_Center: {x: 4.19525, y: -0.24485004, z: 0}
-    m_Extent: {x: 7.85265, y: 2.97605, z: 0}
+    m_Center: {x: 4.2037997, y: -0.24155009, z: 0}
+    m_Extent: {x: 7.8529, y: 2.9702501, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -8122,3 +8195,4 @@ SceneRoots:
   - {fileID: 1045774581}
   - {fileID: 1642960807}
   - {fileID: 460710604}
+  - {fileID: 661151105}
