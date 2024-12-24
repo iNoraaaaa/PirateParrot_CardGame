@@ -53,11 +53,13 @@
      <Compile Include="Assets\Scripts\CardType.cs" />
      <Compile Include="Assets\Scripts\CardTemplate.cs" />
      <Compile Include="Assets\Scripts\CardSelectionNoArrow.cs" />
+     <Compile Include="Assets\Scripts\AttackArrow.cs" />
      <Compile Include="Assets\Scripts\CardManager.cs" />
      <Compile Include="Assets\Scripts\CardObject.cs" />
      <Compile Include="Assets\GameDriver.cs" />
      <Compile Include="Assets\Scripts\CardDeckManager.cs" />
      <Compile Include="Assets\Scripts\CardBank.cs" />
+     <Compile Include="Assets\Scripts\CardSelectionHasArrow.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\DragonCrasher\Art\Environment\EnvironmentPieces\Crystals" />
      <Folder Include="Assets\Scripts\Utility" />
@@ -75,6 +77,7 @@
      <Folder Include="Assets\DragonCrasher\Animations\Characters\AnimClips\Shared_Bipeds" />
      <Folder Include="Assets\Sprites\Cards" />
      <Folder Include="Assets\Settings" />
+     <Folder Include="Assets\Sprites\Arrow" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
      <Folder Include="Assets\DragonCrasher\Animations\Characters\_AnimControllers\Previewing" />
      <Folder Include="Assets\Data\PlayerDeck" />
@@ -90,6 +93,7 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
      <Folder Include="Assets\TextMesh Pro\Resources" />
      <Folder Include="Assets\DragonCrasher\Art\Environment\EnvironmentPieces\MineCartTrack\MineCartTrack_B" />
+     <Folder Include="Assets\Prefabs\Arrow" />
      <Folder Include="Assets\DragonCrasher\Art\Characters\Wolfman" />
      <Folder Include="Assets\DragonCrasher\Art" />
      <Folder Include="Assets\DragonCrasher\Animations\Characters\AnimClips" />

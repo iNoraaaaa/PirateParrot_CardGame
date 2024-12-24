@@ -29,7 +29,6 @@ public class CardManager : MonoBehaviour
     private GameObject CreateInstance()
     {
         var cardObject = Instantiate(cardPrefab, transform, true);
-        Debug.Log($"CreateInstance: Created new card object {cardObject.name}");
         return cardObject;
     }
 
@@ -37,7 +36,6 @@ public class CardManager : MonoBehaviour
     {
         var obj = _instances.Count > 0 ? _instances.Pop() : CreateInstance();
         obj.SetActive(true);
-        Debug.Log($"GetObject: Retrieved card object {obj.name}");
         return obj;
     }
 }

@@ -88,7 +88,10 @@ public class CardDisplayManager : MonoBehaviour
                 seq.AppendInterval(interval);
                 seq.AppendCallback(() =>
                 {
-                    var move = card.transform.DOMove(_positions[j], time);
+                    var move = card.transform.DOMove(_positions[j], time).OnComplete(() =>
+                    {
+                        cardObject.SaveTransform(_positions[j], _rotations[j]);
+                    });
 
                     card.transform.DORotateQuaternion(_rotations[j], time);
                     card.transform.DOScale(_originalCardScale, time);
@@ -98,13 +101,14 @@ public class CardDisplayManager : MonoBehaviour
                         move.OnComplete(() =>
                         {
                             isCardMoving = false;
+                            cardObject.SaveTransform(_positions[j], _rotations[j]);
                         });
                     }
                 });
             }
 
             card.GetComponent<SortingGroup>().sortingOrder = _sortingOrder[i];
-            
+
             interval += 0.2f;
         }
     }
