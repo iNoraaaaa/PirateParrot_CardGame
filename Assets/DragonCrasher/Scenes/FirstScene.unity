@@ -951,8 +951,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0
   m_LocalBounds:
-    m_Center: {x: 0.061800003, y: -0.049000025, z: 0}
-    m_Extent: {x: 2.6041, y: 3.7874, z: 0}
+    m_Center: {x: 0.06034994, y: -0.054200053, z: 0}
+    m_Extent: {x: 2.60325, y: 3.7905998, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1031,6 +1031,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4768689915073034622, guid: b09551d4c6f72584bab5b99aa39b33cd, type: 3}
   m_PrefabInstance: {fileID: 5182116602972819968}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &911763471
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 911763473}
+  - component: {fileID: 911763472}
+  m_Layer: 0
+  m_Name: CardDisplayManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &911763472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911763471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d333ee3dc9d8ab84aac1115d6a00f556, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &911763473
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911763471}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -14.4, y: 0.7394079, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &919550752 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7619994860096215330, guid: 92ccf27e4cdd60047ba8d552db1eaa03, type: 3}
@@ -1390,8 +1434,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0
   m_LocalBounds:
-    m_Center: {x: -0.9317002, y: 2.0830002, z: 0}
-    m_Extent: {x: 10.4209, y: 5.1207, z: 0}
+    m_Center: {x: -0.9265499, y: 2.08575, z: 0}
+    m_Extent: {x: 10.42645, y: 5.12575, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1704,7 +1748,7 @@ GameObject:
   - component: {fileID: 1519110094}
   - component: {fileID: 1519110093}
   m_Layer: 0
-  m_Name: GameDeckManager
+  m_Name: CardDeckManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1722,6 +1766,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86ac8a5af706e149a6468ff5f97b1a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardDisplayManager: {fileID: 911763472}
 --- !u!4 &1519110094
 Transform:
   m_ObjectHideFlags: 0
@@ -2014,8 +2059,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0
   m_LocalBounds:
-    m_Center: {x: 0.0632, y: -0.06314993, z: 0}
-    m_Extent: {x: 2.6092, y: 3.79105, z: 0}
+    m_Center: {x: 0.06410003, y: -0.06585002, z: 0}
+    m_Extent: {x: 2.6067, y: 3.78505, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -3649,8 +3694,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 1
   m_ShadowVolumeIntensity: 0.119
   m_LocalBounds:
-    m_Center: {x: 0.2821498, y: 0.06245017, z: 0}
-    m_Extent: {x: 9.61935, y: 4.29865, z: 0}
+    m_Center: {x: 0.27929974, y: 0.0622499, z: 0}
+    m_Extent: {x: 9.609, y: 4.3039503, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -5703,8 +5748,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 1
   m_ShadowVolumeIntensity: 0.119
   m_LocalBounds:
-    m_Center: {x: -0.033750057, y: 0.3880999, z: 0}
-    m_Extent: {x: 9.43255, y: 4.6354, z: 0}
+    m_Center: {x: -0.04605007, y: 0.40289998, z: 0}
+    m_Extent: {x: 9.43375, y: 4.6338997, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -6067,8 +6112,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0
   m_LocalBounds:
-    m_Center: {x: 4.1976, y: -0.23880005, z: 0}
-    m_Extent: {x: 7.8515, y: 2.9751, z: 0}
+    m_Center: {x: 4.1996503, y: -0.23325002, z: 0}
+    m_Extent: {x: 7.84765, y: 2.97655, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -8336,3 +8381,4 @@ SceneRoots:
   - {fileID: 2055054841}
   - {fileID: 1674289516}
   - {fileID: 1519110094}
+  - {fileID: 911763473}

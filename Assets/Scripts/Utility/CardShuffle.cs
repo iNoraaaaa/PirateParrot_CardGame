@@ -1,9 +1,12 @@
-using System; // 支持 Random
-using System.Collections.Generic; // 支持 List<T>
+using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEngine;
+using Random = System.Random;
 
 public static class CardShuffle
 {
-    private static readonly System.Random _random = new System.Random();
+    private static readonly Random _random = new Random();
 
     public static void Shuffle<T>(this List<T> list)
     {

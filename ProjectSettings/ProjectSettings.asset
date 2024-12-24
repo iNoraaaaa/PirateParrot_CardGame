@@ -559,10 +559,23 @@ PlayerSettings:
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Android: UNITY_UOS_SECURITY
-    Standalone: UNITY_UOS_SECURITY
-    WebGL: UNITY_UOS_SECURITY
-    iPhone: UNITY_UOS_SECURITY
+    Android: UNITY_UOS_SECURITY;DOTWEEN
+    EmbeddedLinux: DOTWEEN
+    GameCoreScarlett: DOTWEEN
+    GameCoreXboxOne: DOTWEEN
+    LinuxHeadlessSimulation: DOTWEEN
+    Nintendo Switch: DOTWEEN
+    PS4: DOTWEEN
+    PS5: DOTWEEN
+    QNX: DOTWEEN
+    Stadia: DOTWEEN
+    Standalone: UNITY_UOS_SECURITY;DOTWEEN
+    VisionOS: DOTWEEN
+    WebGL: UNITY_UOS_SECURITY;DOTWEEN
+    Windows Store Apps: DOTWEEN
+    XboxOne: DOTWEEN
+    iPhone: UNITY_UOS_SECURITY;DOTWEEN
+    tvOS: DOTWEEN
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
