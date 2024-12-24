@@ -49,8 +49,6 @@ public class CardDisplayManager : MonoBehaviour
             drawnCards.Add(cardGameObject);
         }
         
-        Debug.Log($"Total hand cards: {_handCards.Count}");
-    
         PutDeckCardsToHand(drawnCards);
     }
 
@@ -107,8 +105,6 @@ public class CardDisplayManager : MonoBehaviour
 
             card.GetComponent<SortingGroup>().sortingOrder = _sortingOrder[i];
             
-            Debug.Log($"PutDeckCardsToHand: Card {card.name} moved to position {_positions[i]} with rotation {_rotations[i]} and sorting order {_sortingOrder[i]}");
-
             interval += 0.2f;
         }
     }

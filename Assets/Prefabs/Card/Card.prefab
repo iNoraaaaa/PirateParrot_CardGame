@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3366313538317201532}
   - component: {fileID: 3196344260768967547}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 6351229428789280106}
   - component: {fileID: 612794964753979448}
   - component: {fileID: 4083360587878206261}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Card
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -251,7 +251,6 @@ MonoBehaviour:
   descriptionText: {fileID: 675864306668869581}
   picture: {fileID: 5754700078887580174}
   template: {fileID: 0}
-  runtimeCard: {fileID: 0}
 --- !u!1 &3633192542300595937
 GameObject:
   m_ObjectHideFlags: 0
@@ -263,7 +262,7 @@ GameObject:
   - component: {fileID: 7136909772388927793}
   - component: {fileID: 7948616975986950592}
   - component: {fileID: 1533994297270783030}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TypeText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -434,7 +433,7 @@ GameObject:
   - component: {fileID: 8704073902160209919}
   - component: {fileID: 3391649785732828385}
   - component: {fileID: 675864306668869581}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DescriptionText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -604,7 +603,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5631116898164944560}
   - component: {fileID: 5754700078887580174}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ProfilePicture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -689,7 +688,7 @@ GameObject:
   - component: {fileID: 6601528755975819847}
   - component: {fileID: 3048838510346160263}
   - component: {fileID: 8332162350386124954}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CostText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -860,7 +859,7 @@ GameObject:
   - component: {fileID: 358252134556581188}
   - component: {fileID: 835352196729664189}
   - component: {fileID: 7381577666872352592}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: NameText
   m_TagString: Untagged
   m_Icon: {fileID: 0}

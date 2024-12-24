@@ -48,9 +48,11 @@
      <Compile Include="Assets\Scripts\CardDisplayManager.cs" />
      <Compile Include="Assets\Scripts\Utility\CardShuffle.cs" />
      <Compile Include="Assets\Scripts\CardBankItem.cs" />
+     <Compile Include="Assets\Scripts\CardSelectionBase.cs" />
      <Compile Include="Assets\Scripts\RuntimeCard.cs" />
      <Compile Include="Assets\Scripts\CardType.cs" />
      <Compile Include="Assets\Scripts\CardTemplate.cs" />
+     <Compile Include="Assets\Scripts\CardSelectionNoArrow.cs" />
      <Compile Include="Assets\Scripts\CardManager.cs" />
      <Compile Include="Assets\Scripts\CardObject.cs" />
      <Compile Include="Assets\GameDriver.cs" />
