@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e30c8791698d5b54d97eb88b64e7bab4, type: 3}
+  m_Name: ShakeCharacter
+  m_EditorClassIdentifier: 
+  Actions:
+  - {fileID: 11400000, guid: 4a41dae5cf305e7408a76e9467a6399f, type: 2}
