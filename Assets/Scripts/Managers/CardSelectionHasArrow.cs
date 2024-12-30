@@ -58,19 +58,20 @@ public class CardSelectionHasArrow : CardSelectionBase
 
     private void DetectEnemySelection()
     {
-        if (selectedCard != null)
-        {
-            // 检查鼠标是否选中了一个敌人
-            var mousePosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
-            var hitInfo = Physics2D.Raycast(mousePosition, Vector3.forward, Mathf.Infinity, enemyLayer);
-            if (hitInfo.collider != null)
-            {
-                _selectedEnemy = hitInfo.collider.gameObject;
-                PlaySelectedCard();
+        if (selectedCard == null) return;
 
+        var mousePosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
+        var hitInfo = Physics2D.Raycast(mousePosition, Vector3.forward, Mathf.Infinity, enemyLayer);
+        
+        if (hitInfo.collider != null && selectedCard != null)
+        {
+            _selectedEnemy = hitInfo.collider.gameObject;
+            var enemyCharacter = _selectedEnemy.GetComponent<CharacterObject>();
+            
+            if (enemyCharacter != null && enemyCharacter.Character != null)
+            {
+                PlaySelectedCard();
                 selectedCard = null;
-                
-                // 这是鼠标左键按下，这时需要取消攻击显示攻击箭头，为后续攻击效果的显示做准备
                 isArrowCreated = false;
                 _attackArrow.EnableArrow(false);
             }
@@ -116,9 +117,28 @@ public class CardSelectionHasArrow : CardSelectionBase
 
     protected override void PlaySelectedCard()
     {
+        if (_selectedEnemy == null || selectedCard == null)
+        {
+            Debug.LogWarning("Cannot play card: missing enemy or card reference");
+            return;
+        }
+
+        var enemyCharacter = _selectedEnemy.GetComponent<CharacterObject>();
+        if (enemyCharacter == null || enemyCharacter.Character == null)
+        {
+            Debug.LogWarning("Cannot play card: invalid enemy character");
+            return;
+        }
+
+        var cardObject = selectedCard.GetComponent<CardObject>();
+        if (cardObject == null || cardObject.runtimeCard == null)
+        {
+            Debug.LogWarning("Cannot play card: invalid card object");
+            return;
+        }
+
         base.PlaySelectedCard();
-        var card = selectedCard.GetComponent<CardObject>().runtimeCard;
-        effectResolutionManager.ResolveCardEffects(card, _selectedEnemy.GetComponent<CharacterObject>());
+        effectResolutionManager.ResolveCardEffects(cardObject.runtimeCard, enemyCharacter);
     }
     
     private void UpdateCardAndTargetingArrow()

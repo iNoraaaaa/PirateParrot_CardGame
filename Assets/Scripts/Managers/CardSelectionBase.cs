@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class CardSelectionBase : BaseManager
 {
+    [SerializeField] protected AudioManager audioManager;
+    [SerializeField] protected AudioClip cardPlaySound;
     protected Camera mainCamera;
     public LayerMask cardLayer;
 
@@ -24,6 +26,10 @@ public class CardSelectionBase : BaseManager
 
     protected virtual void PlaySelectedCard()
     {
+        if (audioManager != null)
+        {
+            audioManager.PlaySFX(cardPlaySound);
+        }
         var cardObject = selectedCard.GetComponent<CardObject>();
         var cardTemplate = cardObject.template;
         playerMana.SetValue(playerMana.Value - cardTemplate.Cost);
