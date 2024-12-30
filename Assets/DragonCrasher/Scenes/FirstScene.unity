@@ -558,7 +558,7 @@ MonoBehaviour:
   m_Intensity: 4.43
   m_LightVolumeIntensity: 0
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 3dfeccc0e5cd2253
+  m_ApplyToSortingLayers: 3dfeccc0e5cd2253eb489d48ffcf3512
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -784,7 +784,7 @@ MonoBehaviour:
   m_Intensity: 1.05
   m_LightVolumeIntensity: 0.081
   m_LightVolumeIntensityEnabled: 1
-  m_ApplyToSortingLayers: 3dfeccc0e5cd2253
+  m_ApplyToSortingLayers: 3dfeccc0e5cd2253eb489d48ffcf3512
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -866,7 +866,7 @@ MonoBehaviour:
   m_Intensity: 4.85
   m_LightVolumeIntensity: 0
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 3dfeccc0
+  m_ApplyToSortingLayers: 3dfeccc0eb489d48ffcf3512
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -925,6 +925,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44d9afc829f36a441b67ab1251e1ce24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
+  cardPlaySound: {fileID: 0}
   cardLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -1007,7 +1009,7 @@ MonoBehaviour:
   m_Intensity: 7.72
   m_LightVolumeIntensity: 0.17
   m_LightVolumeIntensityEnabled: 1
-  m_ApplyToSortingLayers: b74db5d60d97abafa53e763f77ad63443dfeccc0e5cd2253
+  m_ApplyToSortingLayers: b74db5d60d97abafa53e763f77ad63443dfeccc0e5cd2253eb489d48ffcf3512
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -1126,7 +1128,7 @@ MonoBehaviour:
   m_Intensity: 4.85
   m_LightVolumeIntensity: 0
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 77ad6344e5cd2253
+  m_ApplyToSortingLayers: 77ad6344e5cd2253eb489d48ffcf3512
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -1140,8 +1142,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0
   m_LocalBounds:
-    m_Center: {x: 0.06370008, y: -0.055950046, z: 0}
-    m_Extent: {x: 2.6076999, y: 3.79205, z: 0}
+    m_Center: {x: 0.059249997, y: -0.056349993, z: 0}
+    m_Extent: {x: 2.6128502, y: 3.79535, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1722,7 +1724,7 @@ MonoBehaviour:
   m_Intensity: 1.02
   m_LightVolumeIntensity: 0.081
   m_LightVolumeIntensityEnabled: 1
-  m_ApplyToSortingLayers: 3dfeccc0
+  m_ApplyToSortingLayers: 3dfeccc0eb489d48ffcf3512
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -1794,7 +1796,7 @@ MonoBehaviour:
   m_Intensity: 0.48
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 1
-  m_ApplyToSortingLayers: 77ad6344e5cd2253
+  m_ApplyToSortingLayers: 77ad6344e5cd2253eb489d48ffcf3512
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -1808,8 +1810,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0
   m_LocalBounds:
-    m_Center: {x: -0.92125034, y: 2.0855, z: 0}
-    m_Extent: {x: 10.42585, y: 5.1146, z: 0}
+    m_Center: {x: -0.92939997, y: 2.0918, z: 0}
+    m_Extent: {x: 10.421301, y: 5.1209, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1891,7 +1893,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 0.021
   m_LightVolumeIntensityEnabled: 1
-  m_ApplyToSortingLayers: b74db5d60d97abafa53e763f77ad63443dfeccc0e5cd2253
+  m_ApplyToSortingLayers: b74db5d60d97abafa53e763f77ad63443dfeccc0e5cd2253eb489d48ffcf3512
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -1973,7 +1975,7 @@ MonoBehaviour:
   m_Intensity: 5
   m_LightVolumeIntensity: 0.432
   m_LightVolumeIntensityEnabled: 1
-  m_ApplyToSortingLayers: 77ad6344e5cd2253
+  m_ApplyToSortingLayers: 77ad6344e5cd2253eb489d48ffcf3512
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -2397,6 +2399,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endBattlePopupDelay: 1
   endBattlePopup: {fileID: 1489480921}
+  gameDriver: {fileID: 1785242773}
 --- !u!114 &1330543333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2895,6 +2898,55 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3088aa92a6fbd148a935431f6212edf, type: 3}
+--- !u!1 &1453042982
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1453042983}
+  - component: {fileID: 1453042984}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1453042983
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453042982}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1857169794}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1453042984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453042982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f37f3cca6d6afb54a8fc259a06c55671, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicSource: {fileID: 0}
+  sfxSource: {fileID: 0}
+  battleBGM: {fileID: 8300000, guid: d7beff6c99e24d140bc55f6412c0d817, type: 3}
+  defaultMusicVolume: 0.5
+  defaultSFXVolume: 1
 --- !u!1 &1473623820 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 364235145471930949, guid: 1a9a01ca52e0d458397fd017158d3674, type: 3}
@@ -3574,7 +3626,7 @@ MonoBehaviour:
   m_Intensity: 4.85
   m_LightVolumeIntensity: 0
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 77ad6344e5cd2253
+  m_ApplyToSortingLayers: 77ad6344e5cd2253eb489d48ffcf3512
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -3588,8 +3640,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0
   m_LocalBounds:
-    m_Center: {x: 0.06405008, y: -0.05495, z: 0}
-    m_Extent: {x: 2.6059499, y: 3.78705, z: 0}
+    m_Center: {x: 0.063299894, y: -0.054999948, z: 0}
+    m_Extent: {x: 2.6041, y: 3.7917, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -3826,6 +3878,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ac1de1282b248a4aa8d02fcaaa919b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
   cursorTexture: {fileID: 2800000, guid: 318470170a291874a81094e600e4ed35, type: 3}
   cursorMode: 0
   startingDeck: {fileID: 11400000, guid: e6ba108c263dc464291501993331cb76, type: 2}
@@ -3863,6 +3916,7 @@ MonoBehaviour:
   playerShield: {fileID: 11400000, guid: 6abfac049e38fbe469cf86d7378e2503, type: 2}
   enemyShield: {fileID: 11400000, guid: 30067c4436eb7e84ba71495e2dba0a3e, type: 2}
   playerStatus: {fileID: 11400000, guid: 8e463ffe3a49a2948ad220ff541be787, type: 2}
+  enemyTemplates: []
 --- !u!4 &1785242774
 Transform:
   m_ObjectHideFlags: 0
@@ -3960,6 +4014,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da6e71d67f30b04b832ef7ad68402c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
+  cardPlaySound: {fileID: 0}
   cardLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -4026,6 +4082,7 @@ Transform:
   - {fileID: 97543524}
   - {fileID: 253004661}
   - {fileID: 1330543331}
+  - {fileID: 1453042983}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1876912338
@@ -4080,7 +4137,7 @@ MonoBehaviour:
   m_Intensity: 1.56
   m_LightVolumeIntensity: 0.037
   m_LightVolumeIntensityEnabled: 1
-  m_ApplyToSortingLayers: b74db5d60d97abafa53e763f77ad63443dfeccc0e5cd2253
+  m_ApplyToSortingLayers: b74db5d60d97abafa53e763f77ad63443dfeccc0e5cd2253eb489d48ffcf3512
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -4162,7 +4219,7 @@ MonoBehaviour:
   m_Intensity: 4.94
   m_LightVolumeIntensity: 0
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 3dfeccc0e5cd2253
+  m_ApplyToSortingLayers: 3dfeccc0e5cd2253eb489d48ffcf3512
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -4244,7 +4301,7 @@ MonoBehaviour:
   m_Intensity: 4.94
   m_LightVolumeIntensity: 0
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 3dfeccc0
+  m_ApplyToSortingLayers: 3dfeccc0eb489d48ffcf3512
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -4415,7 +4472,7 @@ MonoBehaviour:
   m_Intensity: 4.43
   m_LightVolumeIntensity: 0
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 3dfeccc0
+  m_ApplyToSortingLayers: 3dfeccc0eb489d48ffcf3512
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -4491,6 +4548,111 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1265448428}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2099859150
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1835282030083979916, guid: e570a990ee99dca45b9143e951cdc867, type: 3}
+      propertyPath: m_IncludeLayers.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1835282030083979916, guid: e570a990ee99dca45b9143e951cdc867, type: 3}
+      propertyPath: m_LayerOverridePriority
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2078129892507693680, guid: e570a990ee99dca45b9143e951cdc867, type: 3}
+      propertyPath: m_SortingOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2771717225525363761, guid: e570a990ee99dca45b9143e951cdc867, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.20083542
+      objectReference: {fileID: 0}
+    - target: {fileID: 2771717225525363761, guid: e570a990ee99dca45b9143e951cdc867, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.20083542
+      objectReference: {fileID: 0}
+    - target: {fileID: 2771717225525363761, guid: e570a990ee99dca45b9143e951cdc867, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.20083542
+      objectReference: {fileID: 0}
+    - target: {fileID: 2771717225525363761, guid: e570a990ee99dca45b9143e951cdc867, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2771717225525363761, guid: e570a990ee99dca45b9143e951cdc867, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 2771717225525363761, guid: e570a990ee99dca45b9143e951cdc867, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2771717225525363761, guid: e570a990ee99dca45b9143e951cdc867, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2771717225525363761, guid: e570a990ee99dca45b9143e951cdc867, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2771717225525363761, guid: e570a990ee99dca45b9143e951cdc867, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2771717225525363761, guid: e570a990ee99dca45b9143e951cdc867, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2771717225525363761, guid: e570a990ee99dca45b9143e951cdc867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2771717225525363761, guid: e570a990ee99dca45b9143e951cdc867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2771717225525363761, guid: e570a990ee99dca45b9143e951cdc867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184582768535082122, guid: e570a990ee99dca45b9143e951cdc867, type: 3}
+      propertyPath: m_Name
+      value: Character_Priest
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184582768535082122, guid: e570a990ee99dca45b9143e951cdc867, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184582768535082122, guid: e570a990ee99dca45b9143e951cdc867, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5930415781798942914, guid: e570a990ee99dca45b9143e951cdc867, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6517548525120458135, guid: e570a990ee99dca45b9143e951cdc867, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497404631957406922, guid: e570a990ee99dca45b9143e951cdc867, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7705269978093989759, guid: e570a990ee99dca45b9143e951cdc867, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e570a990ee99dca45b9143e951cdc867, type: 3}
 --- !u!1 &560634300953747494
 GameObject:
   m_ObjectHideFlags: 0
@@ -4528,7 +4690,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 0.075
   m_LightVolumeIntensityEnabled: 1
-  m_ApplyToSortingLayers: b74db5d60d97abafa53e763f77ad63443dfeccc0e5cd2253
+  m_ApplyToSortingLayers: b74db5d60d97abafa53e763f77ad63443dfeccc0e5cd2253eb489d48ffcf3512
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -5323,7 +5485,7 @@ MonoBehaviour:
   m_Intensity: 5
   m_LightVolumeIntensity: 0.432
   m_LightVolumeIntensityEnabled: 1
-  m_ApplyToSortingLayers: 3dfeccc0e5cd225377ad6344
+  m_ApplyToSortingLayers: 3dfeccc0e5cd225377ad6344eb489d48ffcf3512
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -5451,7 +5613,7 @@ MonoBehaviour:
   m_Intensity: 15
   m_LightVolumeIntensity: 0
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 3dfeccc0e5cd2253
+  m_ApplyToSortingLayers: 3dfeccc0e5cd2253eb489d48ffcf3512
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -5565,7 +5727,7 @@ MonoBehaviour:
   m_Intensity: 2.36
   m_LightVolumeIntensity: 0
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 3dfeccc0e5cd2253
+  m_ApplyToSortingLayers: 3dfeccc0e5cd2253eb489d48ffcf3512
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -5647,7 +5809,7 @@ MonoBehaviour:
   m_Intensity: 2
   m_LightVolumeIntensity: 0.064
   m_LightVolumeIntensityEnabled: 1
-  m_ApplyToSortingLayers: b74db5d60d97abafa53e763f77ad63443dfeccc0e5cd2253
+  m_ApplyToSortingLayers: b74db5d60d97abafa53e763f77ad63443dfeccc0e5cd2253eb489d48ffcf3512
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -5661,8 +5823,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 1
   m_ShadowVolumeIntensity: 0.119
   m_LocalBounds:
-    m_Center: {x: 0.28775024, y: 0.05889988, z: 0}
-    m_Extent: {x: 9.60995, y: 4.3006, z: 0}
+    m_Center: {x: 0.2814498, y: 0.059999943, z: 0}
+    m_Extent: {x: 9.60825, y: 4.3023, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -5780,7 +5942,7 @@ MonoBehaviour:
   m_Intensity: 7.72
   m_LightVolumeIntensity: 0.17
   m_LightVolumeIntensityEnabled: 1
-  m_ApplyToSortingLayers: b74db5d60d97abafa53e763f77ad63443dfeccc0e5cd2253
+  m_ApplyToSortingLayers: b74db5d60d97abafa53e763f77ad63443dfeccc0e5cd2253eb489d48ffcf3512
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -6200,7 +6362,7 @@ MonoBehaviour:
   m_Intensity: 10
   m_LightVolumeIntensity: 0
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 3dfeccc0e5cd2253
+  m_ApplyToSortingLayers: 3dfeccc0e5cd2253eb489d48ffcf3512
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -7701,7 +7863,7 @@ MonoBehaviour:
   m_Intensity: 0.2
   m_LightVolumeIntensity: 0.067
   m_LightVolumeIntensityEnabled: 1
-  m_ApplyToSortingLayers: b74db5d60d97abafa53e763f77ad63443dfeccc0e5cd2253
+  m_ApplyToSortingLayers: b74db5d60d97abafa53e763f77ad63443dfeccc0e5cd2253eb489d48ffcf3512
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -7715,8 +7877,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 1
   m_ShadowVolumeIntensity: 0.119
   m_LocalBounds:
-    m_Center: {x: -0.045350075, y: 0.39030004, z: 0}
-    m_Extent: {x: 9.43235, y: 4.6361, z: 0}
+    m_Center: {x: -0.047249794, y: 0.3942001, z: 0}
+    m_Extent: {x: 9.43585, y: 4.6287003, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -7951,7 +8113,7 @@ MonoBehaviour:
   m_Intensity: 0.32
   m_LightVolumeIntensity: 0
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: b74db5d60d97abafa53e763f77ad63443dfeccc0e5cd2253
+  m_ApplyToSortingLayers: b74db5d60d97abafa53e763f77ad63443dfeccc0e5cd2253eb489d48ffcf3512
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -8065,7 +8227,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 0
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 77ad6344e5cd2253
+  m_ApplyToSortingLayers: 77ad6344e5cd2253eb489d48ffcf3512
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -8079,8 +8241,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0
   m_LocalBounds:
-    m_Center: {x: 4.196, y: -0.24395001, z: 0}
-    m_Extent: {x: 7.8464003, y: 2.97475, z: 0}
+    m_Center: {x: 4.19685, y: -0.24370003, z: 0}
+    m_Extent: {x: 7.84445, y: 2.9729, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -10344,6 +10506,7 @@ SceneRoots:
   - {fileID: 1045774581}
   - {fileID: 1378555190}
   - {fileID: 1434898117}
+  - {fileID: 2099859150}
   - {fileID: 311368896}
   - {fileID: 1923269399}
   - {fileID: 1857169794}

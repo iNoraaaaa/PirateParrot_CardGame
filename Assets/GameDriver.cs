@@ -5,9 +5,11 @@ using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.Assertions;
 
-
 public class GameDriver : MonoBehaviour
 {
+    [Header("Audio")]
+    [SerializeField] private AudioManager audioManager;
+
     public Texture2D cursorTexture;
     public CursorMode cursorMode = CursorMode.Auto;
     
@@ -66,17 +68,30 @@ public class GameDriver : MonoBehaviour
 
     [SerializeField] private StatusVariable playerStatus;
     
+    [SerializeField] private List<AssetReference> enemyTemplates;
+    private int currentLevel = 0;
     
     private void Start()
     {
         mainCamera = Camera.main;
         cardManager.Initialize();
         
-        // 设置鼠标图标
+        // Set cursor texture
         SetCursorTexture();
 
         CreatePlayer(playerTemplate);
         CreateEnemy(enemyTemplate);
+
+        // 初始化 characterDeathManager
+        if (characterDeathManager == null)
+        {
+            characterDeathManager = GetComponent<CharacterDeathManager>();
+            if (characterDeathManager == null)
+            {
+                Debug.LogError("CharacterDeathManager reference not found!");
+                return;
+            }
+        }
     }
 
     private void SetCursorTexture()
@@ -96,11 +111,11 @@ public class GameDriver : MonoBehaviour
             player = Instantiate(template.Prefab, playerPivot);
             Assert.IsNotNull(player);
 
-            playerHp.Value = 20;
+            playerHp.Value = 50;
             playerShield.Value = 0;
             playerManaManager.SetDefaultMana(3);
             
-            CreateHpWidget(playerHpWidget, player, playerHp, 30, playerShield);
+            CreateHpWidget(playerHpWidget, player, playerHp, 50, playerShield);
             CreateStatusWidget(playerStatusWidget, player);
             
             manaWidget.Initialize(playerManaManager.playerManaVariable);
@@ -140,10 +155,10 @@ public class GameDriver : MonoBehaviour
 
             Assert.IsNotNull(enemy);
 
-            enemyHp.Value = 20;
-            enemyShield.Value = 0;
+            enemyHp.Value = 50;
+            enemyShield.Value = 10;
             
-            CreateHpWidget(enemyHpWidget, enemy, enemyHp, 20, enemyShield);
+            CreateHpWidget(enemyHpWidget, enemy, enemyHp, 50, enemyShield);
             CreateIntentWidget(enemyIntentWidget, enemy);
             
             var obj = enemy.GetComponent<CharacterObject>();
@@ -217,5 +232,102 @@ public class GameDriver : MonoBehaviour
         var canvasPosition = mainCamera.WorldToViewportPoint(pivot.position + new Vector3(0.0f, -0.8f, 0.0f));
         hpWidget.GetComponent<RectTransform>().anchorMin = canvasPosition;
         hpWidget.GetComponent<RectTransform>().anchorMax = canvasPosition;
+    }
+
+    private void StartBossFight()
+    {
+        if (currentLevel < 0 || currentLevel >= enemyTemplates.Count)
+        {
+            Debug.LogError("Invalid currentLevel index: " + currentLevel);
+            return;
+        }
+
+        var bossTemplateRef = enemyTemplates[currentLevel];
+        bossTemplateRef.LoadAssetAsync<EnemyTemplate>().Completed += handle =>
+        {
+            var template = handle.Result;
+            var enemy = Instantiate(template.Prefab, enemyPivot);
+            
+            enemyHp.Value = 100;
+            enemyShield.Value = 0;
+            
+            CreateHpWidget(enemyHpWidget, enemy, enemyHp, 100, enemyShield);
+            CreateIntentWidget(enemyIntentWidget, enemy);
+            
+            var obj = enemy.GetComponent<CharacterObject>();
+            obj.Template = template;
+            obj.Character = new RuntimeCharacter 
+            { 
+                Hp = enemyHp, 
+                Shield = enemyShield,
+                Mana = 100, 
+                MaxHp = 100
+            };
+            
+            enemies.Add(enemy);
+            Initialize();
+        };
+    }
+
+        public void OnEnemyDefeated()
+    {
+        foreach (var enemy in enemies)
+        {
+            Destroy(enemy);
+        }
+        enemies.Clear();
+        
+        currentLevel++;
+        if (currentLevel < enemyTemplates.Count)
+        {
+            StartNextEnemy();
+        }
+        else
+        {
+            Debug.Log("Game Won!");
+            if (characterDeathManager != null)
+            {
+                characterDeathManager.EndGame(false);
+            }
+            else
+            {
+                Debug.LogError("CharacterDeathManager reference is null!");
+            }
+        }
+    }
+
+    private void StartNextEnemy()
+    {
+        if (currentLevel < 0 || currentLevel >= enemyTemplates.Count)
+        {
+            Debug.LogError("Invalid currentLevel index: " + currentLevel);
+            return;
+        }
+
+        var enemyTemplateRef = enemyTemplates[currentLevel];
+        enemyTemplateRef.LoadAssetAsync<EnemyTemplate>().Completed += handle =>
+        {
+            var template = handle.Result;
+            var enemy = Instantiate(template.Prefab, enemyPivot);
+            
+            enemyHp.Value = 100; // 增加敌人的血量
+            enemyShield.Value = 20; // 增加敌人的护盾
+            
+            CreateHpWidget(enemyHpWidget, enemy, enemyHp, 100, enemyShield);
+            CreateIntentWidget(enemyIntentWidget, enemy);
+            
+            var obj = enemy.GetComponent<CharacterObject>();
+            obj.Template = template;
+            obj.Character = new RuntimeCharacter 
+            { 
+                Hp = enemyHp, 
+                Shield = enemyShield,
+                Mana = 10, // 增加敌人的行动点
+                MaxHp = 100
+            };
+            
+            enemies.Add(enemy);
+            Initialize();
+        };
     }
 }

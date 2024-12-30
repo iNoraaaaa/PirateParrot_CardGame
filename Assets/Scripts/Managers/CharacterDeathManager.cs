@@ -6,7 +6,8 @@ public class CharacterDeathManager : BaseManager
 {
     [SerializeField] private float endBattlePopupDelay = 1.0f;
     [SerializeField] private EndBattlePopup endBattlePopup;
-    
+    [SerializeField] private GameDriver gameDriver;
+
     public void OnPlayerHpChanged(int hp)
     {
         if (hp <= 0)
@@ -31,9 +32,6 @@ public class CharacterDeathManager : BaseManager
 
     private IEnumerator ShowEndBattlePopup(bool characterDied)
     {
-        // yield return new WaitForSeconds(0.2f);
-        // Debug.Log("Game End");
-        
         yield return new WaitForSeconds(endBattlePopupDelay);
 
         if (endBattlePopup != null)
@@ -54,5 +52,56 @@ public class CharacterDeathManager : BaseManager
         }
     }
     
-    
+    public override void Initialize(CharacterObject player, List<CharacterObject> enemies)
+    {
+        base.Initialize(player, enemies);
+        
+        if(gameDriver == null)
+        {
+            gameDriver = FindObjectOfType<GameDriver>();
+            if(gameDriver == null)
+            {
+                Debug.LogError("GameDriver reference not found!");
+                return;
+            }
+        }
+        
+        foreach (var enemy in enemies)
+        {
+            if(enemy != null && enemy.Character != null && enemy.Character.Hp != null)
+            {
+                enemy.Character.Hp.OnValueChanged += value => 
+                {
+                    if (value <= 0)
+                    {
+                        enemy.OnCharacterDied();
+                        if(gameDriver != null)
+                        {
+                            gameDriver.OnEnemyDefeated();
+                        }
+                    }
+                };
+            }
+            else
+            {
+                Debug.LogError("Enemy or its components are null!");
+            }
+        }
+
+        if(player != null && player.Character != null && player.Character.Hp != null)
+        {
+            player.Character.Hp.OnValueChanged += value =>
+            {
+                if (value <= 0)
+                {
+                    player.OnCharacterDied();
+                    EndGame(true);
+                }
+            };
+        }
+        else
+        {
+            Debug.LogError("Player or its components are null!");
+        }
+    }
 }

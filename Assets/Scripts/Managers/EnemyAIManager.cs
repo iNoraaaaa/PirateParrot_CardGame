@@ -2,9 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-/// <summary>
-/// 敌人AI控制类用于控制敌人的AI决策，包括随机的效果生成等
-/// </summary>
 public class EnemyAIManager : BaseManager
 {
     [SerializeField]
@@ -17,7 +14,6 @@ public class EnemyAIManager : BaseManager
     private List<EnemyAI> brains;
 
     private const float ThinkingTime = 1.5f;
-
 
     public override void Initialize(CharacterObject player, List<CharacterObject> enemies)
     {
@@ -57,7 +53,6 @@ public class EnemyAIManager : BaseManager
                         currentRepeatCount = 0;
                         brain.PatternIndex += 1;
                     }
-
                     brain.Effects = pattern.Effects;
                     sprite = repeatPattern.Sprite;
                 }
@@ -66,7 +61,6 @@ public class EnemyAIManager : BaseManager
                     var effects = new List<int>();
                     var index = 0;
                     
-                    // 根据设置的机率，生成对应的效果数量列表，然后对列表进行随机选择
                     foreach (var probability in randomPattern.Probabilities)
                     {
                         var amount = probability.Value;
@@ -119,5 +113,4 @@ public class EnemyAIManager : BaseManager
             yield return new WaitForSeconds(ThinkingTime);
         }
     }
-    
 }

@@ -9,38 +9,36 @@ public class EffectResolutionManager : BaseManager
 
     public void ResolveCardEffects(RuntimeCard card, CharacterObject playerSelectedTarget)
     {
+        if (card == null || card.Template == null || card.Template.Effects == null)
+        {
+            Debug.LogError("Invalid card or effects in ResolveCardEffects");
+            return;
+        }
+
         foreach (var effect in card.Template.Effects)
         {
-            var targetableEffect = effect as TargetableEffect;
+            if (effect == null) continue;
 
-            if (targetableEffect != null)
+            if (effect is TargetableEffect targetableEffect)
             {
-                var targets = GetTargets(targetableEffect, playerSelectedTarget, true);
-                foreach (var target in targets)
+                if (playerSelectedTarget == null)
                 {
-                    targetableEffect.Resolve(Player.Character, target.Character);
+                    Debug.LogError("No target selected for targetable effect");
+                    continue;
+                }
 
-                    foreach (var groupManager in targetableEffect.SourceActions)
+                var targets = GetTargets(targetableEffect, playerSelectedTarget, true);
+                if (targets != null && targets.Count > 0)
+                {
+                    foreach (var target in targets)
                     {
-                        foreach (var action in groupManager.Group.Actions)
-                        {
-                            action.Execute(Player.gameObject);
-                        }
-                    }
-                    
-                    foreach (var groupManager in targetableEffect.TargetActions)
-                    {
-                        foreach (var action in groupManager.Group.Actions)
-                        {
-                            var enemy = cardSelectionHasArrow.GetSelectedEnemy();
-                            action.Execute(enemy.gameObject);
-                        }
+                        targetableEffect.Resolve(Player.Character, target.Character);
                     }
                 }
             }
-            else
+            else if (effect is IEntityEffect entityEffect)
             {
-                (effect as IEntityEffect)?.Resolve(Player.Character, Player.Character);
+                entityEffect.Resolve(Player.Character, playerSelectedTarget.Character);
             }
         }
     }
@@ -59,10 +57,6 @@ public class EffectResolutionManager : BaseManager
                 {
                     targetableEffect.Resolve(Player.Character, target.Character);
                 }
-            }
-            else
-            {
-                (effect as IEntityEffect)?.Resolve(Player.Character, Player.Character);
             }
         }
     }
@@ -85,10 +79,6 @@ public class EffectResolutionManager : BaseManager
                 {
                     targetableEffect.Resolve(enemy.Character, target.Character);
                 }
-            }
-            else
-            {
-                (effect as IEntityEffect)?.Resolve(Player.Character, Player.Character);
             }
         }
     }

@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: AgilityBoost
   m_EditorClassIdentifier: 
   Name: AgilityBoost
-  Sprite: {fileID: 0}
+  Sprite: {fileID: 21300000, guid: 0c67604ed4c80b04e97cee180fe04e6e, type: 3}

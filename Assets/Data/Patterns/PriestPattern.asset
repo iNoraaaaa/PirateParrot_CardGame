@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33de4d62b1c8cce4eb941a903a3c1a90, type: 3}
+  m_Name: PriestPattern
+  m_EditorClassIdentifier: 
+  Effects:
+  - {fileID: 11400000, guid: 58b3c3e1d3a9a41488ff7534e5b2f088, type: 2}
+  actionType: 0
+  damage: 0
+  healing: 0
+  defenseReductionPercent: 0
+  dealDamageEffect: {fileID: 11400000, guid: 58b3c3e1d3a9a41488ff7534e5b2f088, type: 2}
+  gainHpEffect: {fileID: 11400000, guid: b04453f649609e640b941b2ee52bdcd1, type: 2}
+  gainShieldEffect: {fileID: 11400000, guid: 8b373415d7b6aab47a608f1fc912dc57, type: 2}

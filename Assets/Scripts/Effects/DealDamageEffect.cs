@@ -10,6 +10,13 @@ public class DealDamageEffect : IntegerEffect, IEntityEffect
 {
     public override void Resolve(RuntimeCharacter source, RuntimeCharacter target)
     {
+        if (target == null)
+        {
+            Debug.LogError("Target is null in DealDamageEffect");
+            return;
+        }
+
+        Debug.Log($"Dealing damage, Current HP: {target.Hp.Value}");
         var targetHp = target.Hp;
         var hp = targetHp.Value;
 
@@ -50,14 +57,6 @@ public class DealDamageEffect : IntegerEffect, IEntityEffect
         }
         
         Debug.Log("Deal Damage" + damage);
-
-        // var newHp = hp - damage;
-        // if (newHp < 0)
-        // {
-        //     newHp = 0;
-        // }
-        //
-        // targetHp.SetValue(newHp);
     }
 
     public override string GetName()

@@ -13,7 +13,7 @@ TagManager:
   - UI
   - Card
   - Enemy
-  - 
+  - Boss
   - 
   - 
   - 
@@ -49,4 +49,10 @@ TagManager:
     locked: 0
   - name: Card
     uniqueID: 1394789861
+    locked: 0
+  - name: Enemy
+    uniqueID: 1218267371
+    locked: 0
+  - name: Boss
+    uniqueID: 305516543
     locked: 0

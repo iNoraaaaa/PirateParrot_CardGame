@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: PowerBoost
   m_EditorClassIdentifier: 
   Name: PowerBoost
-  Sprite: {fileID: 0}
+  Sprite: {fileID: 21300000, guid: c8af49819cfccf94c83348d2a81e7504, type: 3}
