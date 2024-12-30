@@ -38,6 +38,10 @@ public class EffectResolutionManager : BaseManager
                     }
                 }
             }
+            else
+            {
+                (effect as IEntityEffect)?.Resolve(Player.Character, Player.Character);
+            }
         }
     }
 
@@ -55,6 +59,10 @@ public class EffectResolutionManager : BaseManager
                 {
                     targetableEffect.Resolve(Player.Character, target.Character);
                 }
+            }
+            else
+            {
+                (effect as IEntityEffect)?.Resolve(Player.Character, Player.Character);
             }
         }
     }
@@ -77,6 +85,10 @@ public class EffectResolutionManager : BaseManager
                 {
                     targetableEffect.Resolve(enemy.Character, target.Character);
                 }
+            }
+            else
+            {
+                (effect as IEntityEffect)?.Resolve(Player.Character, Player.Character);
             }
         }
     }

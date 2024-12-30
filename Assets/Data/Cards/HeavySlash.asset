@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5a7eb640529fe5b43a98e0baff553337, type: 3}
-  m_Name: Potion
+  m_Name: HeavySlash
   m_EditorClassIdentifier: 
-  Id: 3
-  Name: Potion
-  Cost: 2
-  Picture: {fileID: 21300000, guid: 8007639519610e3478c9e3875f9af4c8, type: 3}
-  Type: {fileID: 11400000, guid: 229e395e0f25fa540a2d38e8a67765e2, type: 2}
+  Id: 7
+  Name: "HeavySlash\t"
+  Cost: 3
+  Picture: {fileID: 21300000, guid: 66c5be82de2bd6e49aa0243c7926a395, type: 3}
+  Type: {fileID: 11400000, guid: 4028f8f9baaa0404d99beebcb1428e0b, type: 2}
   Effects:
-  - {fileID: 11400000, guid: b04453f649609e640b941b2ee52bdcd1, type: 2}
+  - {fileID: 11400000, guid: 491ab85d998cc084a84f4dab081a5822, type: 2}

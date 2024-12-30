@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5a7eb640529fe5b43a98e0baff553337, type: 3}
-  m_Name: Potion
+  m_Name: QuickJab
   m_EditorClassIdentifier: 
-  Id: 3
-  Name: Potion
-  Cost: 2
-  Picture: {fileID: 21300000, guid: 8007639519610e3478c9e3875f9af4c8, type: 3}
-  Type: {fileID: 11400000, guid: 229e395e0f25fa540a2d38e8a67765e2, type: 2}
+  Id: 8
+  Name: Quick Jab
+  Cost: 1
+  Picture: {fileID: 21300000, guid: 4a22448f6e65b2447a86dbcb87d82f4d, type: 3}
+  Type: {fileID: 11400000, guid: 164c59a76f6b3da4396487e85ccfd910, type: 2}
   Effects:
-  - {fileID: 11400000, guid: b04453f649609e640b941b2ee52bdcd1, type: 2}
+  - {fileID: 11400000, guid: e8046f114d047684ebc1596d2b84cc93, type: 2}
+  - {fileID: 11400000, guid: ce55beec02a5c4a49a4c8713710200c0, type: 2}

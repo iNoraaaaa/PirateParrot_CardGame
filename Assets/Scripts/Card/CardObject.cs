@@ -80,9 +80,26 @@ public class CardObject : MonoBehaviour
 
     public void Reset(Action onComplete)
     {
+        var sequence = DOTween.Sequence();
+    
+        sequence.Append(transform.DOMove(_savedPosition, 0.2f));
+        sequence.Join(transform.DORotateQuaternion(_savedRotation, 0.2f));
+        
+        sequence.OnComplete(() => {
+            if (this != null) // Check if the object is still valid
+            {
+                _sortingGroup.sortingOrder = _savedSortingOrder;
+                onComplete?.Invoke();
+            }
+        });
         transform.DOMove(_savedPosition, 0.2f);
         transform.DORotateQuaternion(_savedRotation, 0.2f);
         _sortingGroup.sortingOrder = _savedSortingOrder;
         onComplete();
+    }
+
+    private void OnDestroy()
+    {
+        DOTween.Kill(transform);
     }
 }

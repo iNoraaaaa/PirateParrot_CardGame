@@ -15,7 +15,7 @@ MonoBehaviour:
   Id: 2
   Name: Shield
   Cost: 1
-  Picture: {fileID: 21300000, guid: 9b0fd2da10f404ed6973b1a2a9aa9dc2, type: 3}
+  Picture: {fileID: 21300000, guid: 853cda16c104d744fa1515b5a7e9d651, type: 3}
   Type: {fileID: 11400000, guid: 1c88b86af3360cc48a39666ab168e87f, type: 2}
   Effects:
   - {fileID: 11400000, guid: 8b373415d7b6aab47a608f1fc912dc57, type: 2}

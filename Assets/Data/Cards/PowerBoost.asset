@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5a7eb640529fe5b43a98e0baff553337, type: 3}
-  m_Name: Potion
+  m_Name: PowerBoost
   m_EditorClassIdentifier: 
-  Id: 3
-  Name: Potion
+  Id: 4
+  Name: Power Boost
   Cost: 2
-  Picture: {fileID: 21300000, guid: 8007639519610e3478c9e3875f9af4c8, type: 3}
-  Type: {fileID: 11400000, guid: 229e395e0f25fa540a2d38e8a67765e2, type: 2}
+  Picture: {fileID: 21300000, guid: 80abae6311874474f86526f1539f4e30, type: 3}
+  Type: {fileID: 11400000, guid: d8f84bd88b150c7449d3ef8fd0f68f2f, type: 2}
   Effects:
-  - {fileID: 11400000, guid: b04453f649609e640b941b2ee52bdcd1, type: 2}
+  - {fileID: 11400000, guid: 8658b610b8bb86a4e85b2e9b135bc12a, type: 2}

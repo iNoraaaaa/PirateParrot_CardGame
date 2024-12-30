@@ -196,17 +196,21 @@ public class CardDisplayManager : MonoBehaviour
     public void MoveCardToDiscardPile(GameObject gameObj)
     {
         var sequence = DOTween.Sequence();
-        sequence.AppendCallback(() =>
-        {
-            gameObj.transform.DOScale(Vector3.zero, CardToDiscardPileAnimationTime).OnComplete(() =>
+        
+        // Preserve the card manager reference
+        var poolObject = gameObj.GetComponent<CardManager.ManagedPoolObject>();
+        var cardManager = poolObject?.cardManager;
+        
+        sequence.Append(gameObj.transform.DOMove(_discardPileWidget.transform.position, 0.3f));
+        sequence.Join(gameObj.transform.DOScale(Vector3.zero, 0.3f));
+        
+        sequence.OnComplete(() => {
+            if (gameObj != null && cardManager != null)  // Check if the object is still valid
             {
-                gameObj.GetComponent<CardManager.ManagedPoolObject>().cardManager.ReturnObject(gameObj);
-            });
-        });
-        sequence.AppendCallback(() =>
-        {
-            _discardPileWidget.AddCard();
-            _handCards.Remove(gameObj);
+                cardManager.ReturnObject(gameObj);
+                _discardPileWidget.AddCard();
+                _handCards.Remove(gameObj);
+            }
         });
     }
 

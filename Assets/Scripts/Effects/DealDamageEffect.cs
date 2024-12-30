@@ -26,6 +26,12 @@ public class DealDamageEffect : IntegerEffect, IEntityEffect
             {
                 damage = (int)Mathf.Floor(damage * 0.75f);
             }
+
+            var powerBoost = source.Status.GetValue("PowerBoost");
+            if (powerBoost > 0)
+            {
+                damage += powerBoost;
+            }
         }
 
         if (damage >= shield)
